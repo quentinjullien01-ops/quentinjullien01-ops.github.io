@@ -177,6 +177,16 @@
       border: 1px dashed rgba(243,146,0,0.35);
       animation: spin 28s linear infinite;
     }
+    .avatar-img {
+      position: absolute;
+      inset: 0;
+      width: 100%; height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      z-index: 1;
+      display: block;
+    }
+    .avatar-fallback { z-index: 0; }
     @keyframes spin { to { transform: rotate(360deg); } }
 
     /* ── ABOUT ──────────────────────────────── */
@@ -418,7 +428,10 @@
         </div>
       </div>
 
-      <div class="avatar" aria-label="Quentin Jullien">QJ</div>
+      <div class="avatar" aria-label="Quentin Jullien">
+        <span class="avatar-fallback">QJ</span>
+        <img src="Photo Profil/QJ.jpg" alt="Quentin Jullien" class="avatar-img" onerror="this.remove();">
+      </div>
     </section>
 
     <p class="about">
