@@ -3,27 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quentin Jullien — BTP Ingénierie</title>
-  <meta name="description" content="Quentin Jullien — Technicien / Chargé d'affaires chez BTP Ingénierie. Diagnostic structurel sur ouvrages béton et métal.">
+  <title>Quentin Jullien — BET Structural</title>
+  <meta name="description" content="Quentin Jullien — Responsable d'agence chez BET Structural, Lyon. Diagnostic structurel, expertise et ingénierie sur ouvrages béton et métal.">
   <meta name="robots" content="noindex, nofollow">
   <meta name="linkedinbot" content="index">
-  <meta property="og:title" content="Quentin Jullien – Chargé d'affaires | BTP Ingénierie" />
-  <meta property="og:description" content="Diagnostic structurel, auscultation GPR, pathologie du bâtiment – Bureau d'études BTP Ingénierie, Agence Sud." />
+  <meta property="og:title" content="Quentin Jullien – Responsable d'agence | BET Structural" />
+  <meta property="og:description" content="Diagnostic structurel, auscultation GPR, pathologie du bâtiment – BET Structural, Agence Lyon." />
   <meta property="og:image" content="https://quentinjullien01-ops.github.io/preview.jpg" />
   <meta property="og:url" content="https://quentinjullien01-ops.github.io/" />
   <meta property="og:type" content="website" />
-  <link rel="icon" href="Logos BTPI/cropped-favicone.png">
+  <link rel="icon" href="Logos BET Structural/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="Logos BET Structural/favicon-192x192.png">
   <style>
     :root {
-      --bg: #0b0b0c;
-      --bg-2: #111113;
-      --text: #ececec;
-      --text-soft: #c5c5c8;
-      --muted: #7a7a80;
-      --line: #1f1f23;
-      --line-strong: #2f2f35;
-      --primary: #F39200;
-      --primary-soft: rgba(243,146,0,0.10);
+      --bg: #fdfcfa;
+      --bg-2: #ffffff;
+      --cream: #fbf3d9;
+      --text: #1c1c1a;
+      --text-soft: #4a4a46;
+      --muted: #77766e;
+      --line: #e8e4d8;
+      --line-strong: #d6d1c0;
+      --primary: #6e9f79;
+      --primary-dark: #557b5e;
+      --gold: #d9ac1f;
+      --gold-soft: rgba(217,172,31,0.12);
+      --primary-soft: rgba(110,159,121,0.10);
       --ease: cubic-bezier(.2,.7,.2,1);
     }
 
@@ -53,7 +58,7 @@
       position: fixed;
       top: -15%; right: -10%;
       width: 55vw; height: 55vh;
-      background: radial-gradient(closest-side, var(--primary-soft), transparent 70%);
+      background: radial-gradient(closest-side, var(--gold-soft), transparent 70%);
       pointer-events: none;
       z-index: 0;
     }
@@ -62,7 +67,7 @@
       position: fixed;
       bottom: -15%; left: -10%;
       width: 50vw; height: 50vh;
-      background: radial-gradient(closest-side, rgba(243,146,0,0.05), transparent 70%);
+      background: radial-gradient(closest-side, var(--primary-soft), transparent 70%);
       pointer-events: none;
       z-index: 0;
     }
@@ -74,7 +79,7 @@
       max-width: 1040px;
       background: var(--bg-2);
       border: 1px solid var(--line);
-      box-shadow: 0 30px 80px -20px rgba(0,0,0,0.6);
+      box-shadow: 0 30px 80px -24px rgba(30,30,20,0.16);
     }
 
     /* ── TOPBAR ─────────────────────────────── */
@@ -82,17 +87,30 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 18px 32px;
+      padding: 16px 32px;
       border-bottom: 1px solid var(--line);
     }
-    .topbar img.logo { height: 30px; display: block; }
+    .topbar .brand { display: flex; align-items: center; gap: 12px; }
+    .topbar img.logo { height: 40px; display: block; }
+    .topbar .brand-text { line-height: 1.15; }
+    .topbar .brand-name {
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      color: var(--text);
+    }
+    .topbar .brand-baseline {
+      font-size: 10.5px;
+      font-style: italic;
+      color: var(--muted);
+    }
     .topbar .tag {
       font-size: 10px;
       letter-spacing: 0.3em;
       text-transform: uppercase;
       color: var(--muted);
     }
-    .topbar .tag .accent { color: var(--primary); }
+    .topbar .tag .accent { color: var(--gold); }
 
     /* ── HERO ───────────────────────────────── */
     .hero {
@@ -113,8 +131,8 @@
     .photo-fallback {
       position: absolute; inset: 0;
       display: grid; place-items: center;
-      background: linear-gradient(135deg, var(--primary), #c66800);
-      color: #1a1003;
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      color: #f2fbf4;
       font-size: 60px; font-weight: 700; letter-spacing: -0.02em;
     }
     .photo-img {
@@ -125,7 +143,7 @@
       object-position: center top;
       display: block;
       z-index: 1;
-      filter: contrast(1.05) saturate(0.92);
+      filter: contrast(1.03) saturate(0.96);
     }
     /* Corner brackets — top-left & bottom-right */
     .photo::before,
@@ -133,7 +151,7 @@
       content: "";
       position: absolute;
       width: 22px; height: 22px;
-      border: 1px solid var(--primary);
+      border: 1px solid var(--gold);
       pointer-events: none;
       z-index: 2;
     }
@@ -167,11 +185,11 @@
       color: var(--muted);
       margin-bottom: 18px;
     }
-    .role .sep { color: var(--primary); margin: 0 8px; }
+    .role .sep { color: var(--gold); margin: 0 8px; }
 
     .accent-line {
-      width: 36px; height: 1px;
-      background: var(--primary);
+      width: 36px; height: 2px;
+      background: var(--gold);
       margin-bottom: 22px;
     }
 
@@ -184,7 +202,7 @@
       width: max-content;
       transition: color .18s var(--ease);
     }
-    .contact:hover { color: var(--primary); }
+    .contact:hover { color: var(--primary-dark); }
     .contact svg {
       width: 13px; height: 13px;
       color: var(--primary);
@@ -199,16 +217,17 @@
       color: var(--muted);
       font-size: 14.5px;
       line-height: 1.7;
-      border-left: 1px solid var(--primary);
+      border-left: 2px solid var(--primary);
     }
-    .about strong { color: var(--text); font-weight: 500; }
+    .about strong { color: var(--text); font-weight: 600; }
 
     /* ── SECTIONS — flat 3-col grid, hairlines ── */
     .sections {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       border-top: 1px solid var(--line);
       margin-top: 36px;
+      background: var(--cream);
     }
     .section {
       padding: 26px 26px 30px;
@@ -219,9 +238,9 @@
     .section-num {
       font-size: 10px;
       letter-spacing: 0.3em;
-      color: var(--primary);
+      color: var(--gold);
       margin-bottom: 6px;
-      font-weight: 600;
+      font-weight: 700;
     }
     .section-title {
       font-size: 12px;
@@ -255,7 +274,7 @@
       border-bottom: 1px dotted var(--line-strong);
       transition: border-color .18s var(--ease);
     }
-    .chip[data-tip]:hover { color: var(--primary); }
+    .chip[data-tip]:hover { color: var(--primary-dark); }
     .chip[data-tip]:hover > span { border-bottom-color: var(--primary); }
     .chip[data-tip]::after {
       content: attr(data-tip);
@@ -263,8 +282,8 @@
       bottom: calc(100% + 8px);
       left: 22px;
       padding: 9px 12px;
-      background: #050505;
-      color: var(--text);
+      background: #1c1c1a;
+      color: #fdfcfa;
       border: 1px solid var(--line-strong);
       font-size: 11.5px;
       line-height: 1.5;
@@ -274,7 +293,7 @@
       opacity: 0;
       pointer-events: none;
       transition: opacity .18s var(--ease);
-      box-shadow: 0 12px 32px -8px rgba(0,0,0,0.7);
+      box-shadow: 0 12px 32px -8px rgba(0,0,0,0.25);
       z-index: 5;
     }
     .chip[data-tip]:hover::after { opacity: 1; }
@@ -306,13 +325,13 @@
       white-space: nowrap;
     }
     .btn:last-child { border-right: none; }
-    .btn:hover { background: var(--primary); color: #1a1003; }
+    .btn:hover { background: var(--primary-soft); color: var(--primary-dark); }
     .btn.primary {
       background: var(--primary);
-      color: #1a1003;
+      color: #ffffff;
       font-weight: 700;
     }
-    .btn.primary:hover { background: #ffa826; }
+    .btn.primary:hover { background: var(--primary-dark); color: #ffffff; }
     .btn svg { width: 13px; height: 13px; }
 
     /* ── FOOTER with signature ──────────────── */
@@ -330,12 +349,10 @@
       text-transform: uppercase;
       color: var(--muted);
     }
-    .footer-left .accent { color: var(--primary); }
+    .footer-left .accent { color: var(--gold); }
     .signature-img {
       height: 54px;
-      filter: invert(1) brightness(1.15);
-      mix-blend-mode: screen;
-      opacity: 0.95;
+      opacity: 0.9;
       pointer-events: none;
     }
 
@@ -346,7 +363,7 @@
       bottom: 28px;
       transform: translateX(-50%) translateY(24px);
       background: var(--primary);
-      color: #1a1003;
+      color: #ffffff;
       font-weight: 600;
       padding: 10px 18px;
       font-size: 12px;
@@ -361,7 +378,7 @@
     /* ── MODAL ──────────────────────────────── */
     .modal {
       position: fixed; inset: 0;
-      background: rgba(0,0,0,0.85);
+      background: rgba(20,20,15,0.55);
       backdrop-filter: blur(6px);
       display: none;
       align-items: center; justify-content: center;
@@ -382,7 +399,7 @@
       content: "";
       position: absolute;
       width: 18px; height: 18px;
-      border: 1px solid var(--primary);
+      border: 1px solid var(--gold);
     }
     .modal .box::before {
       top: -4px; left: -4px;
@@ -398,6 +415,7 @@
       padding: 12px;
       display: block;
       margin: 0 auto 16px;
+      border: 1px solid var(--line);
     }
     .modal h4 {
       font-size: 11px;
@@ -415,13 +433,13 @@
       font-family: inherit;
       transition: all .18s var(--ease);
     }
-    .modal .close:hover { border-color: var(--primary); color: var(--primary); }
+    .modal .close:hover { border-color: var(--primary); color: var(--primary-dark); }
 
     /* ── RESPONSIVE ─────────────────────────── */
     @media (max-width: 760px) {
       body { padding: 16px 8px; }
       .topbar { padding: 16px 20px; }
-      .topbar img.logo { height: 26px; }
+      .topbar img.logo { height: 34px; }
       .hero {
         grid-template-columns: 1fr;
         gap: 28px;
@@ -451,14 +469,14 @@
       .actions, .topbar .tag { display: none; }
       * { color: #000 !important; }
       .photo-img { filter: none; }
-      .signature-img { filter: none !important; mix-blend-mode: normal; opacity: 1; }
+      .signature-img { opacity: 1; }
       .photo::before, .photo::after,
       .accent-line, .role .sep, .section-num, .chip::before {
-        border-color: #F39200 !important;
-        background: #F39200 !important;
-        color: #F39200 !important;
+        border-color: #6e9f79 !important;
+        background: #6e9f79 !important;
+        color: #6e9f79 !important;
       }
-      .about { border-left-color: #F39200 !important; }
+      .about { border-left-color: #6e9f79 !important; }
     }
   </style>
 </head>
@@ -466,7 +484,13 @@
   <main class="card" role="main">
 
     <header class="topbar">
-      <img class="logo" src="Logos BTPI/Logo BTPI blanc.png" alt="BTP Ingénierie">
+      <div class="brand">
+        <img class="logo" src="Logos BET Structural/logo-structural-off.webp" alt="BET Structural">
+        <div class="brand-text">
+          <div class="brand-name">STRUCTURAL</div>
+          <div class="brand-baseline">La haute ingénierie</div>
+        </div>
+      </div>
       <span class="tag">Bureau d'études <span class="accent">·</span> Carte de visite</span>
     </header>
 
@@ -480,17 +504,17 @@
         <h1 class="name">
           <span class="first">Quentin</span><span class="last"> Jullien</span>
         </h1>
-        <div class="role">Technicien <span class="sep">·</span> Chargé d'affaires</div>
+        <div class="role">Responsable d'agence <span class="sep">·</span> Lyon</div>
         <div class="accent-line"></div>
 
         <div class="contacts">
-          <a class="contact" href="mailto:q.jullien@btp-inge.fr" data-copy="q.jullien@btp-inge.fr" title="Cliquer pour copier">
+          <a class="contact" href="mailto:quentin.jullien@betstructural.com" data-copy="quentin.jullien@betstructural.com" title="Cliquer pour copier">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            q.jullien@btp-inge.fr
+            quentin.jullien@betstructural.com
           </a>
-          <a class="contact" href="tel:+33789575350" data-copy="+33789575350" title="Cliquer pour copier">
+          <a class="contact" href="tel:+33766899508" data-copy="+33766899508" title="Cliquer pour copier">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            07 89 57 53 50
+            07 66 89 95 08
           </a>
           <a class="contact" href="https://www.linkedin.com/in/quentin-jullien-5a84b0103" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45C23.2 24 24 23.23 24 22.28V1.72C24 .77 23.2 0 22.22 0z"/></svg>
@@ -501,7 +525,7 @@
     </section>
 
     <p class="about">
-      Expériences <strong>terrain</strong> sur différents types de structures, notamment <strong>béton</strong> et <strong>métal</strong>.
+      <strong>Responsable d'agence</strong> chez BET Structural (Lyon), avec une solide expérience <strong>terrain</strong> sur différents types de structures, notamment <strong>béton</strong> et <strong>métal</strong>.
       Diagnostic structurel sur <strong>parking public, immeuble, maison, piscine</strong> et autres ouvrages — relevés de désordres, diagnostics, expertise.
     </p>
 
@@ -522,18 +546,6 @@
 
       <section class="section">
         <div class="section-num">II.</div>
-        <h3 class="section-title">Outils maîtrisés</h3>
-        <div class="chips">
-          <span class="chip" data-tip="Radar de structure (GPR) — détection d'armatures, gaines, vides et désordres internes du béton."><span>Proceq GP 8000</span></span>
-          <span class="chip" data-tip="Estimation non destructive de la résistance à la compression du béton."><span>Scléromètre</span></span>
-          <span class="chip" data-tip="Mesure du taux d'humidité dans les matériaux — modèles capacitif (sans contact) et à pointes (par enfoncement)."><span>Humidimètre capacitif &amp; à pointes</span></span>
-          <span class="chip" data-tip="Mesure du potentiel de corrosion des armatures du béton armé."><span>Corrosimètre</span></span>
-          <span class="chip" data-tip="Prélèvement d'échantillons cylindriques pour essais en laboratoire."><span>Carotteuse</span></span>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="section-num">III.</div>
         <h3 class="section-title">Formations</h3>
         <div class="chips">
           <span class="chip" data-tip="Plates-formes élévatrices mobiles de personnel (PEMP) — catégories 1A, 1B, 3A et 3B."><span>CACES Nacelle 1A · 1B · 3A · 3B</span></span>
@@ -549,13 +561,13 @@
       </button>
       <button class="btn" id="qrBtn">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><path d="M14 14h3v3h-3zM20 14h1v1h-1zM14 20h3v1h-3zM20 17h1v4"/></svg>
-        QR site BTPI
+        QR site BET Structural
       </button>
-      <button class="btn" data-copy="q.jullien@btp-inge.fr">
+      <button class="btn" data-copy="quentin.jullien@betstructural.com">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="9" y="9" width="13" height="13"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
         Copier email
       </button>
-      <button class="btn" data-copy="+33789575350">
+      <button class="btn" data-copy="+33766899508">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="9" y="9" width="13" height="13"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
         Copier tél
       </button>
@@ -566,15 +578,15 @@
     </div>
 
     <footer>
-      <span class="footer-left">BTP Ingénierie <span class="accent">·</span> Bureau d'études</span>
+      <span class="footer-left">BET Structural <span class="accent">·</span> Bureau d'études</span>
       <img src="Signature/Capture d'écran 2025-09-23 135536.png" alt="Signature" class="signature-img">
     </footer>
   </main>
 
   <div class="modal" id="qrModal" role="dialog" aria-modal="true" aria-labelledby="qrTitle">
     <div class="box">
-      <img src="Logos BTPI/qr-code site.png" alt="QR code site BTP Ingénierie">
-      <h4 id="qrTitle">Site BTP Ingénierie</h4>
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https://betstructural.com/" alt="QR code site BET Structural">
+      <h4 id="qrTitle">Site BET Structural</h4>
       <p>Scannez pour découvrir nos missions.</p>
       <button class="close" onclick="document.getElementById('qrModal').classList.remove('show')">Fermer</button>
     </div>
@@ -625,12 +637,12 @@
         'VERSION:3.0',
         'N:Jullien;Quentin;;;',
         'FN:Quentin Jullien',
-        'ORG:BTP Ingénierie',
-        "TITLE:Technicien / Chargé d'affaires",
-        'EMAIL;TYPE=WORK:q.jullien@btp-inge.fr',
-        'TEL;TYPE=CELL:+33789575350',
+        'ORG:BET Structural',
+        "TITLE:Responsable d'agence",
+        'EMAIL;TYPE=WORK:quentin.jullien@betstructural.com',
+        'TEL;TYPE=CELL:+33766899508',
         'URL:https://www.linkedin.com/in/quentin-jullien-5a84b0103',
-        'NOTE:Diagnostic structurel sur ouvrages béton et métal — Proceq GP 8000\\, scléromètre\\, humidimètre\\, corrosimètre\\, carotteuse. CACES Nacelle 1A/1B/3A/3B.',
+        'NOTE:Diagnostic structurel sur ouvrages béton et métal. CACES Nacelle 1A/1B/3A/3B.',
         'END:VCARD'
       ].join('\r\n');
       const blob = new Blob([vcard], { type: 'text/vcard;charset=utf-8' });
